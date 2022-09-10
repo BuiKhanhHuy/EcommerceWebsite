@@ -1,0 +1,14 @@
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.deps.json
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.runtimeconfig.json
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.pdb
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.csproj.AssemblyReference.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.GeneratedMSBuildEditorConfig.editorconfig
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.AssemblyInfoInputs.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.AssemblyInfo.cs
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.csproj.CoreCompileInputs.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\refint\Ecommerce.Common.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.pdb
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.genruntimeconfig.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\ref\Ecommerce.Common.dll

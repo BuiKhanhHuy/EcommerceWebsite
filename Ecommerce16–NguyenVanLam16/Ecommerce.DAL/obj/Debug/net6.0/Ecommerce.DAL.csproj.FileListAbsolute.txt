@@ -1,0 +1,17 @@
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.DAL.deps.json
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.DAL.runtimeconfig.json
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.DAL.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.DAL.pdb
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.Common.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\bin\Debug\net6.0\Ecommerce.Common.pdb
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.csproj.AssemblyReference.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.AssemblyInfoInputs.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.AssemblyInfo.cs
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.csproj.CoreCompileInputs.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.csproj.CopyComplete
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\refint\Ecommerce.DAL.dll
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.pdb
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\Ecommerce.DAL.genruntimeconfig.cache
+H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.DAL\obj\Debug\net6.0\ref\Ecommerce.DAL.dll
