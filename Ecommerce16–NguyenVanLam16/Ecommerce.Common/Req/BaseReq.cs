@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QLBH.Common.Req
+namespace Ecommerce.Common.Req
 {
     public abstract class BaseReq<T>
     {

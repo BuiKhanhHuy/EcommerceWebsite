@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Ecommerce.Common.BLL
 {
     using DAL;
-    using QLBH.Common.Rsp;
+    using Ecommerce.Common.Rsp;
     using Rsp;
     using System.Linq.Expressions;
 

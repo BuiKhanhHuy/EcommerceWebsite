@@ -1,12 +1,59 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Ecommerce.BLL;
+using Ecommerce.Common.Req;
+using Ecommerce.Common.Rsp;
 
 namespace Ecommerce16_NguyenVanLam16.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class CategoriesController : Controller
     {
-        public IActionResult Index()
+        private CategorySvc categorySvc;
+
+        public CategoriesController()
         {
-            return View();
+            this.categorySvc = new CategorySvc();
+        }
+
+        [HttpGet("")]
+        public IActionResult GetCategories()
+        {
+            var res = new SingleRsp();
+            res.Data = categorySvc.All;
+
+            return Ok(res);
+        }
+
+        [HttpPost("")]
+        public IActionResult AddCategory([FromBody] CategoryReq categoryReq)
+        {
+            var res = categorySvc.AddCategory(categoryReq);
+
+            return Ok(res);
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult GetCatetoryById(int id)
+        {
+            var res = categorySvc.Read(id);
+
+            return Ok(res);
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult UpdateCategory(int id)
+        {
+            return Ok();
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCategoryById(int id)
+        {
+            var res = categorySvc.Delete(id);
+            return Ok(res);
         }
     }
 }
