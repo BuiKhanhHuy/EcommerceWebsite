@@ -29,14 +29,6 @@ namespace Ecommerce.BLL
             return res;
         }
 
-        public override SingleRsp Delete(int id)
-        {
-            var res = new SingleRsp();
-
-            res.Data = categoryRep.Delete(id);
-
-            return res;
-        }
         #endregion
 
         #region -- Methods
@@ -48,6 +40,28 @@ namespace Ecommerce.BLL
             category.Name = categoryReq.Name;
             category.Description = categoryReq.Description;
             res = categoryRep.AddCategory(category);
+
+            return res;
+        }
+
+        public SingleRsp UpdateCategory(int id, CategoryReq categoryReq)
+        {
+            var res = new SingleRsp();
+            Category category = new Category();
+
+            category.Id = id;
+            category.Name = categoryReq.Name;
+            category.Description = categoryReq.Description;
+            res = categoryRep.UpdateCategory(category);
+
+            return res;
+        }
+
+        public SingleRsp DeleteCategory(int id)
+        {
+            var res = new SingleRsp();
+
+            res = categoryRep.DeleteCategory(id);
 
             return res;
         }

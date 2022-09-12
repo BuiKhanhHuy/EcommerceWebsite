@@ -1,30 +1,26 @@
-﻿using System;
+﻿using Ecommerce.Common.Rsp;
+using Ecommerce.DAL.Models;
+using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.ComponentModel;
 using System.Linq;
-using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
+using Ecommerce.Common;
 using Ecommerce.Common.DAL;
-using Ecommerce.Common.Req;
-using Ecommerce.Common.Rsp;
-using Ecommerce.DAL.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.DAL
 {
-    public class CategoryRep : GenericRep<EcommerceDbContext, Category>
+    public class UserRep:GenericRep<EcommerceDbContext, User>
     {
         #region -- Overrides --
-        public override Category Read(int id)
+        public override User Read(int id)
         {
             return All.FirstOrDefault(c => c.Id == id);
         }
         #endregion
 
         #region -- Methods
-        public SingleRsp AddCategory(Category category)
+        public SingleRsp AddUser(User user)
         {
             var res = new SingleRsp();
             using (var context = new EcommerceDbContext())
@@ -33,12 +29,12 @@ namespace Ecommerce.DAL
                 {
                     try
                     {
-                        context.Categories.Add(category);
+                        context.Users.Add(user);
 
                         context.SaveChanges();
                         tran.Commit();
 
-                        res.SetData("201", category);
+                        res.SetData("201", user);
                     }
                     catch (Exception ex)
                     {
@@ -50,7 +46,7 @@ namespace Ecommerce.DAL
             return res;
         }
 
-        public SingleRsp UpdateCategory(Category category)
+        public SingleRsp UpdateUser(User user)
         {
             var res = new SingleRsp();
             using (var context = new EcommerceDbContext())
@@ -59,12 +55,12 @@ namespace Ecommerce.DAL
                 {
                     try
                     {
-                        context.Categories.Update(category);
+                        context.Users.Update(user);
 
                         context.SaveChanges();
                         tran.Commit();
 
-                        res.SetData("200", category);
+                        res.SetData("200", user);
                     }
                     catch (Exception ex)
                     {
@@ -76,17 +72,17 @@ namespace Ecommerce.DAL
             return res;
         }
 
-        public SingleRsp DeleteCategory(int id)
+        public SingleRsp DeleteUser(int id)
         {
             var res = new SingleRsp();
 
             try
             {
-                var cat = base.All.First(c => c.Id == id);
+                var u = base.All.First(c => c.Id == id);
 
-                cat = base.Delete(cat);
+                u = base.Delete(u);
 
-                res.SetData("204", cat);
+                res.SetData("204", u);
             }
             catch (Exception ex)
             {

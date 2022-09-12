@@ -43,16 +43,19 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
         }
 
         [HttpPatch("{id}")]
-        public IActionResult UpdateCategory(int id)
+        public IActionResult UpdateCategory(int id, [FromBody] CategoryReq categoryReq)
         {
-            return Ok();
+            var res = categorySvc.UpdateCategory(id, categoryReq);
+
+            return Ok(res);
         }
 
 
         [HttpDelete("{id}")]
         public IActionResult DeleteCategoryById(int id)
         {
-            var res = categorySvc.Delete(id);
+            var res = categorySvc.DeleteCategory(id);
+
             return Ok(res);
         }
     }
