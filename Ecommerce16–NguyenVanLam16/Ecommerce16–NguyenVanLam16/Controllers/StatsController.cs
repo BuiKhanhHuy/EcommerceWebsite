@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks.Dataflow;
 using System.Linq;
+using Ecommerce.BLL;
 
 namespace Ecommerce16_NguyenVanLam16.Controllers
 {
@@ -9,22 +10,18 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
     [ApiController]
     public class StatsController : Controller
     {
-        private EcommerceDbContext context = new EcommerceDbContext();
-        public IActionResult Index()
+        private StatsSvc statsSvc;
+
+        public StatsController()
         {
+            this.statsSvc = new StatsSvc();
+        }
 
 
-            var stats = context.Products
-                .GroupBy(p => p.Category)
-                .Select(t =>
-                new
-                {
-                    t.Key.Id,
-                    t.Key.Name,
-                });
-
-            return Json(stats);
-
+        [HttpGet("/product-statistics-by-category")]
+        public IActionResult ProductStatisticsByCategory()
+        {
+            return Ok(this.statsSvc.ProductStatisticsByCategory());
         }
     }
 }
