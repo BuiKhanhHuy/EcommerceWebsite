@@ -42,7 +42,7 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
             return Ok(res);
         }
 
-        [HttpPatch("{id}")]
+        [HttpPut("{id}")]
         public IActionResult UpdateUser(int id, [FromBody] UserReq userReq)
         {
             var res = userSvc.UpdateUser(id, userReq);
@@ -55,6 +55,16 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
         public IActionResult DeleteUserById(int id)
         {
             var res = userSvc.DeleteUser(id);
+
+            return Ok(res);
+        }
+
+        [HttpGet("search")]
+        public IActionResult SearchUser([FromQuery] SearchUserReq searchUserReq)
+        {
+            var res = new SingleRsp();
+            var users = userSvc.SearchUser(searchUserReq);
+            res.Data = users;
 
             return Ok(res);
         }

@@ -76,17 +76,27 @@ namespace Ecommerce.DAL
         {
             var res = new SingleRsp();
 
-            try
+            using (var context = new EcommerceDbContext())
             {
-                var u = base.All.First(c => c.Id == id);
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var u = context.Users.Where(c => c.Id == id).First();
 
-                u = base.Delete(u);
+                        context.Remove(u);
+                        context.SaveChanges();
 
-                res.SetData("204", u);
-            }
-            catch (Exception ex)
-            {
-                res.SetError("500", ex.StackTrace);
+                        tran.Commit();
+
+                        res.SetData("204", u);
+                    }
+                    catch (Exception ex)
+                    {
+                        res.SetError("500", ex.StackTrace);
+                        tran.Rollback();
+                    }
+                }
             }
 
             return res;

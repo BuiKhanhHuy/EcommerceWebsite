@@ -22,5 +22,12 @@ namespace Ecommerce.BLL
 
             return result;
         }
+
+        public SingleRsp RevenueStatisticsByCategory(String year)
+        {
+            SingleRsp result = statsRep.RevenueStatisticsByCategory(year);
+
+            return result;
+        }
     }
 }

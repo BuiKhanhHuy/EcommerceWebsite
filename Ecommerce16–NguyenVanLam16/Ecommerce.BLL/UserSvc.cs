@@ -78,6 +78,36 @@ namespace Ecommerce.BLL
 
             return res;
         }
+
+        public object SearchUser(SearchUserReq searchUserReq)
+        {
+            var users = All;
+            if (searchUserReq.Keyword != null)
+            {
+                users = users.Where(x => x.Username.Contains(searchUserReq.Keyword) 
+                || x.FullName.Contains(searchUserReq.Keyword)
+                || x.Email.Contains(searchUserReq.Keyword)
+                || x.Phone.Contains(searchUserReq.Keyword));
+            }
+
+            var offset = (searchUserReq.Page - 1) * searchUserReq.Size;
+            var total = users.Count();
+
+            int totalPage = (int)Math.Ceiling((decimal)total / searchUserReq.Size);
+
+            var data = users.Take(searchUserReq.Size).ToList();
+            var res = new
+            {
+                Data = data,
+                TotalRecord = total,
+                TotalPages = totalPage,
+                Page = searchUserReq.Page,
+                Size = searchUserReq.Size
+
+            };
+
+            return res;
+        }
         #endregion
     }
 }

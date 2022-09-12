@@ -42,7 +42,7 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
             return Ok(res);
         }
 
-        [HttpPatch("{id}")]
+        [HttpPut ("{id}")]
         public IActionResult UpdateCategory(int id, [FromBody] CategoryReq categoryReq)
         {
             var res = categorySvc.UpdateCategory(id, categoryReq);
@@ -55,6 +55,16 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
         public IActionResult DeleteCategoryById(int id)
         {
             var res = categorySvc.DeleteCategory(id);
+
+            return Ok(res);
+        }
+
+        [HttpGet("search")]
+        public IActionResult SearchCategory([FromQuery] SearchCategoryReq searchCategoryReq)
+        {
+            var res = new SingleRsp();
+            var categories = categorySvc.SearchCategory(searchCategoryReq);
+            res.Data = categories;
 
             return Ok(res);
         }
