@@ -69,7 +69,7 @@ namespace Ecommerce.BLL
         public object SearchCategory(SearchCategoryReq searchCategoryReq)
         {
             var categories = All;
-            if(searchCategoryReq.Keyword  != null)
+            if (searchCategoryReq.Keyword != null)
             {
                 categories = categories.Where(x => x.Name.Contains(searchCategoryReq.Keyword));
             }
@@ -94,7 +94,14 @@ namespace Ecommerce.BLL
             return res;
         }
 
+        public object GetTopFiveCates()
+        {
+            var res = All;
+            var data = res.OrderBy(x => x.Products.Count).Take(5);
 
+            var newRes = data.ToList();
+            return newRes;
+        }
         #endregion
     }
 }

@@ -68,5 +68,13 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
 
             return Ok(res);
         }
+
+        [HttpGet("topCates")]
+        public IActionResult GetTopFiveCategories()
+        {
+            var res = new SingleRsp();
+            res.Data = categorySvc.GetTopFiveCates();
+            return Ok(res);
+        }
     }
 }

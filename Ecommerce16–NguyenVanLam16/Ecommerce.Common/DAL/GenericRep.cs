@@ -93,6 +93,10 @@ namespace Ecommerce.Common.DAL
             }
         }
 
+        public virtual List<T> Read()
+        {
+            return _context.Set<T>().ToList();
+        }
         #endregion
 
         #region -- Methods --

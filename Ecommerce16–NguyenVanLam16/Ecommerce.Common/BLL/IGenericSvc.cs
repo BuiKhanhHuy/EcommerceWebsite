@@ -95,6 +95,11 @@ namespace Ecommerce.Common.BLL
         /// </summary>
         /// <param name="id">Primary key</param>
         /// <returns>Number of affect</returns>
+        /// 
+        public virtual MultipleRsp Read()
+        {
+            return null;
+        }
         int Remove(int id);
 
         #endregion

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Ecommerce.Common.Rsp;
 using System.Text.Json.Nodes;
 using System.Reflection.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.DAL
 {
@@ -25,10 +26,11 @@ namespace Ecommerce.DAL
             SingleRsp singleRsp = new SingleRsp();
             try
             {
-                var result = context.Products.GroupBy(x => x.CategoryId)
+                var result = context.Products.GroupBy(x => new { x.CategoryId, x.Category.Name })
                     .Select(t => new
                     {
-                        categoryId = t.Key,
+                        categoryId = t.Key.CategoryId,
+                        categoryName = t.Key.Name,
                         quantity = t.Count(),
                         maxPrice = t.Max(prop => prop.Price),
                         minPrice = t.Min(prop => prop.Price),
@@ -52,10 +54,11 @@ namespace Ecommerce.DAL
             {
                 var result = context.OrderDetails
                     .Where(od => od.Order.CreatedDate.Value.Year == Int32.Parse(year))
-                        .GroupBy(od => od.Product.CategoryId)
+                        .GroupBy(od => new { categoryId = od.Product.CategoryId, categoryName = od.Product.Name})
                      .Select(t => new
                      {
-                         categoryId = t.Key,
+                         categoryId = t.Key.categoryId,
+                         categoryName = t.Key.categoryName,
                          turnover = t.Sum(p => p.Num * p.UnitPrice)
                      });
 
