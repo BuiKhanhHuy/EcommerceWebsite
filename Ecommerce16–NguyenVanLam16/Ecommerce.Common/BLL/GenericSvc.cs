@@ -9,7 +9,6 @@ namespace Ecommerce.Common.BLL
 {
     using DAL;
     using QLBH.Common.Rsp;
-    using Rsp;
     using System.Linq.Expressions;
 
     public class GenericSvc<D, T> : IGenericSvc<T> where T : class where D : IGenericRep<T>, new()
@@ -67,6 +66,11 @@ namespace Ecommerce.Common.BLL
         public IQueryable<T> Read(Expression<Func<T, bool>> p)
         {
             return _rep.Read(p);
+        }
+
+        public virtual MultipleRsp Read()
+        {
+            return null;
         }
 
 

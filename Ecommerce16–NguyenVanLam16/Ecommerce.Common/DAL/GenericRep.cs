@@ -42,6 +42,11 @@ namespace Ecommerce.Common.DAL
             return _context.Set<T>().Where(p);
         }
 
+        public virtual List<T> Read()
+        {
+            return _context.Set<T>().ToList();
+        }
+
         /// <summary>
         /// Read single object
         /// </summary>

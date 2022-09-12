@@ -6103,19 +6103,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\kyuut\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\Ecommerce.Web.csproj",
+      "projectUniqueName": "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\Ecommerce.Web.csproj",
       "projectName": "Ecommerce.Web",
-      "projectPath": "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\Ecommerce.Web.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\obj\\",
+      "projectPath": "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\Ecommerce.Web.csproj",
+      "packagesPath": "C:\\Users\\kyuut\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kyuut\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6129,11 +6129,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
-              "projectPath": "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
+            "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
+              "projectPath": "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
             },
-            "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Common\\Ecommerce.Common.csproj": {
-              "projectPath": "H:\\BTL_LT_CSDL\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Common\\Ecommerce.Common.csproj"
+            "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Common\\Ecommerce.Common.csproj": {
+              "projectPath": "C:\\Users\\kyuut\\Desktop\\EcommerceWebsite\\Ecommerce16–NguyenVanLam16\\Ecommerce.Common\\Ecommerce.Common.csproj"
             }
           }
         }

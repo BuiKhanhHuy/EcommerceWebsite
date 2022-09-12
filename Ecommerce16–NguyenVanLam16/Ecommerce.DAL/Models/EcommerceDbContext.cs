@@ -29,7 +29,7 @@ namespace Ecommerce.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=KHANHHUY\\SERVERKHANHHUY;Initial Catalog=EcommerceDb;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EcommerceDb;Integrated Security=True");
             }
         }
 
@@ -41,9 +41,7 @@ namespace Ecommerce.DAL.Models
             {
                 entity.ToTable("Category");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
+                entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.Description).HasMaxLength(255);
 
@@ -133,9 +131,7 @@ namespace Ecommerce.DAL.Models
             {
                 entity.ToTable("Product");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
+                entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 

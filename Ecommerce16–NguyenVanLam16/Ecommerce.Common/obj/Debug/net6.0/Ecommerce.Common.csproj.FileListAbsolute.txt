@@ -12,3 +12,17 @@ H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\ob
 H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.pdb
 H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.genruntimeconfig.cache
 H:\BTL_LT_CSDL\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\ref\Ecommerce.Common.dll
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.csproj.AssemblyReference.cache
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.AssemblyInfoInputs.cache
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.AssemblyInfo.cs
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.csproj.CoreCompileInputs.cache
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.pdb
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.deps.json
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.runtimeconfig.json
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.dll
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\bin\Debug\net6.0\Ecommerce.Common.pdb
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.dll
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\refint\Ecommerce.Common.dll
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\Ecommerce.Common.genruntimeconfig.cache
+C:\Users\kyuut\Desktop\EcommerceWebsite\Ecommerce16–NguyenVanLam16\Ecommerce.Common\obj\Debug\net6.0\ref\Ecommerce.Common.dll
