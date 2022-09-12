@@ -57,7 +57,7 @@ namespace Ecommerce16_NguyenVanLam16.Controllers
         }
 
         [HttpPost("add-product")]
-        public IActionResult AddProduct([FromBody] ProductAddReq productAddReq)
+        public IActionResult AddProduct([FromBody] ProductAddOrUpdateReq productAddReq)
         {
             var res = new SingleRsp();
             res = productSvc.AddProdcut(productAddReq);

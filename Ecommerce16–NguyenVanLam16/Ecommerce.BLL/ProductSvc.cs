@@ -85,7 +85,7 @@ namespace Ecommerce.BLL
             return _rep.Delete(id); ;
         }
 
-        public SingleRsp AddProdcut(ProductAddReq productAddReq)
+        public SingleRsp AddProdcut(ProductAddOrUpdateReq productAddReq)
         {
             Product product = new Product();
             product.Name = productAddReq.Name;
